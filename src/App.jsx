@@ -1,16 +1,12 @@
-import TaskList from './components/TaskList.jsx';
+import KartuBuku from './components/KartuBuku';
 
-const dummy = [
-  { id: 1, judul: 'Baca materi', selesai: true },
-  { id: 2, judul: 'Kerjakan latihan', selesai: false },
-  { id: 3, judul: 'Kumpulkan jurnal', selesai: false },
-];
-
-export default function App() {
+function App() {
   return (
-    <main>
-      <h1>TaskMate</h1>
-      <TaskList tasks={dummy} />
-    </main>
+    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+      <h1>Katalog Buku Digital</h1>
+      <KartuBuku />
+    </div>
   );
 }
+
+export default App;
